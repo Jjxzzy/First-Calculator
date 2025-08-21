@@ -21,3 +21,13 @@ function calculate(){
 function rickRoll(){
     window.open('https://youtu.be/dQw4w9WgXcQ?si=nT6_FFyDi28RSaJr', '_blank');
 }
+
+function appendToDisplay(value){
+    display.textContext += value;
+    // resizeDisplayText();
+}
+
+// function resizeDisplayText({
+//     display.style.fontSize = 80;
+    
+// })
