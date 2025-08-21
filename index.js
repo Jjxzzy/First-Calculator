@@ -3,6 +3,7 @@ const display = document.getElementById("display");
 
 function appendToDisplay(input){
     display.value += input;
+    resizeDisplayText();
 }
 
 function clearDisplay(){
@@ -22,12 +23,11 @@ function rickRoll(){
     window.open('https://youtu.be/dQw4w9WgXcQ?si=nT6_FFyDi28RSaJr', '_blank');
 }
 
-function appendToDisplay(value){
-    display.textContext += value;
-    // resizeDisplayText();
+function resizeDisplayText(){
+    console.log(display.value.length)
+    if(display.value.length > 10){
+        display.style.fontSize = "40px";
+    } else {
+        display.style.fontSize = "80px";
+    }
 }
-
-// function resizeDisplayText({
-//     display.style.fontSize = 80;
-    
-// })
